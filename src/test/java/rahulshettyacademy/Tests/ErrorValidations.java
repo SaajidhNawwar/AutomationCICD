@@ -32,6 +32,7 @@ public class ErrorValidations extends BaseTest{
 
 		String productName = "AUTOMATION 8";
 		landingPage.login("mnmnsaajidh@gmail.com", "Saaj@123");
+		//given incorrect email id
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 
 	}
